@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tanya Pal Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">My Portfolio</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/tanya.jpeg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Tanya Pal</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Fresher  ',
+						'Cloud Engineer ',
+						'Data science   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Cloud engineer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 8 monthsof experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://docs.google.com/document/d/1zIvgtyvGryeQfw-uY9uDm27Fwkmz4d5I/edit?usp=sharing&ouid=117376054689258369262&rtpof=true&sd=true" class="btn btn-white btn-outline-white py-3 px-4">My Resume</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="aboutme">
+										<img src="images/aboutme.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Tanya Pal</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Technical Research analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>8 months </span></p>
+										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>DevOps tools</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>AWS cloud</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With 8 months of full-time experience as a Technical Research analyst on cloud and over 2 years of working with AWS, I have developed expertise in cloud technology and information security. Proficient in AWS services, including EC2, S3, RDS, and Lambda, as well as cloud architecture design, automation tools, and DevOps practices. I have successfully led projects to deploy and manage scalable, secure cloud infrastructure and have provided mentorship to junior engineers. My technical skills include Python, scripting languages, Terraform, Docker, and Kubernetes.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Cloud engineer</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>IT , CS &amp; Software engineering and automation with cloud</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master of Computer Application</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Cloud:</span> <span>Microsoft Azure, AWS &amp; GCP</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Python, Linux, Data Visualization, Git, Docker, Web development &amp; AWS & Devops</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Reading Research papers, Cooking</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="5">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/tanya-pal-738571219/" class="btn btn-primary py-4 px-5">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+		
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Dynamic and dedicated Master of Computer Application (Data Science and Analytics) student with a strong foundation in Cloud Technology and Information Security. Experienced as a Technical Research Analyst with a demonstrated history of working with AWS services and implementing security best practices. Proficient in a variety of programming languages, data visualization, and DevOps tools. Adept at problem-solving, teamwork, and possessing strong analytical skills. Passionate about leveraging technology to deliver innovative solutions and drive business growth..</p>
+          </div>
+        </div>
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-6 text-center ftco-animate">
+				<p><a href="https://docs.google.com/document/d/1zIvgtyvGryeQfw-uY9uDm27Fwkmz4d5I/edit?usp=sharing&ouid=117376054689258369262&rtpof=true&sd=true" class="btn btn-primary py-4 px-5">Download Resume</a></p>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">March2023- November2023</span>
+						<h2>Technical Research analyst</h2>
+						<span class="position">Intellipaat, Bangalore</span>
+						<p class="mt-4">Intellipaat is a leading online education provider that offers various professional courses in collaboration with top universities and industry experts
+							<ul>
+								<li>conducted in-depth research and analysis on AWS services, including EC2, S3, RDS, Lambda, and CloudFormation.</li>
+								<li>I also leveraged my expertise in Python and DevOps tools to develop automated solutions, streamline processes, and enhance the efficiency of cloud operations</li>
+								<li>Conducted sentiment analysis using Machine Learning on airline reviews, utilizing Python and libraries such as NumPy, Pandas, Matplotlib, and SciPy.
+									Explored the dataset to gain insights into data distribution, sentiments, and common reasons for negative feedback..</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Aug2022-Feb2022</span>
+						<h2>AWS & Devops (Software Trainee)</h2>
+						<span class="position">Ducat</span>
+						<p class="mt-4">Ducat is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
+							<ul>
+								<li>During my tenure as an AWS and DevOps trainee at Ducat, Noida, I gained hands-on experience with real-time projects that enhanced my practical knowledge and skills.</li>
+								<li> My responsibilities included working with configuration management tools such as Ansible, Chef, Jenkins, Docker, and Kubernetes</li>
+								<li>I monitored and maintained cloud resources utilizing AWS CloudWatch, configuring alerts and dashboards to ensure optimal performance.
+									This experience provided me with a solid foundation in both AWS and DevOps, allowing me to effectively implement solutions and manage cloud infrastructure.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2025</span>
+    					<h2>Master of Computer Application(Data science and analytics)</h2>
+    					<span class="position">Teerthanker Mahaveer University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2023</span>
+    					<h2>Bachelor of Computer Application(Cloud technology and information security)</h2>
+    					<span class="position">Teerthanker Mahaveer University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2020</span>
+    					<h2>Senior Secondary High School</h2>
+    					<span class="position">The G.K. Welhams college(affiliated by ISC Board)</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2018</span>
+    					<h2>High School</h2>
+    					<span class="position">The G.K. Welhams college(affiliated by ICSE Board)</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the  projects just check it.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Vipinrepo/Sentiment-analysis-using-machine-learning-project" class="block-20 zoom-effect" style="background-image: url('images/proj1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Vipinrepo/Sentiment-analysis-using-machine-learning-project">Sentiment Analysis using ML on Airline reviews</a></h3>
+                <p>Develop a sentiment analysis model using machine learning techniques to classify airline reviews as positive, neutral, or negative, enhancing customer feedback insights and airline service improvements</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href=" " class="block-20 zoom-effect" style="background-image: url('images/proj2.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">Inventorygroco-dairy and vegetable_website</a></h3>
+                <p>Develop a website for a grocery store specializing in dairy and vegetables, providing an easy-to-use interface for browsing, pricing, and purchasing products, with options for delivery or in-store pickup.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="" class="block-20 zoom-effect" style="background-image: url('images/proj3.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">ElasticWeb- Three tier architecture using AWS</a></h3>
+                <p>Implement an elastic three-tier architecture on AWS using S3 and CloudFront for the frontend, EC2 or Elastic Beanstalk for the backend, and RDS or DynamoDB for the database, with ELB and Auto Scaling for high availability and scalability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+	 <div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Vipinrepo/Tanya_portfoliowebsite/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj4.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Vipinrepo/Tanya_portfoliowebsite/tree/main">Portfolio-Tanya Pal</a></h3>
+				  <p>It is a sleek and modern portfolio website showcasing my skills, projects, and professional background, designed with HTML, CSS, and JavaScript to provide an engaging user experience.</p>
+				</div>
+			  </div>
+			</div>
+			<!--<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>    -->
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements and certifications</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="8">0</strong>
+                <span>Google cloud skill badges</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="4">0</strong>
+                <span>Globally Certified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/Vipinrepo" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p><a href="Address"></a> Railwayharthala colony,Moradabad,India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://9045769386">+ 91 9045769386</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:tanyapal057@gmail.com">tanyapal057@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://docs.google.com/document/d/1zIvgtyvGryeQfw-uY9uDm27Fwkmz4d5I/edit?usp=sharing&ouid=117376054689258369262&rtpof=true&sd=true">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtW6ClUxpnHNK7gYuRSJ52ssP9k6sLI8fI_DU8_6gc90A_qw/viewform" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/Vipinrepo"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/tanya-pal-738571219/"><span class="icon-linkedin"></span></a></li>  
+				      <li class="ftco-animate"><a href="https://www.instagram.com/taanupal_4/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p>
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This is Portfolio website<i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="#" target="_blank"> Tanya</a>
+	</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
